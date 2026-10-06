@@ -11,6 +11,7 @@ abstract final class PresentationColors {
 
   static const introAccent = Color(0xFFE4935D);
   static const flutterDartAccent = Color(0xFF4FD1C5);
+  static const flutterAdvancedAccent = Color(0xFF6C8EF5);
   static const marionetteAccent = Color(0xFFB18CFF);
   static const qaAccent = Color(0xFFEAC54F);
 }

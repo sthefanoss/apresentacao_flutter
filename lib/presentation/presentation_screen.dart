@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'presentation_theme.dart';
+import 'slide_index_scope.dart';
 import 'slides_data.dart';
 
 final _advanceKeys = {
@@ -79,17 +80,20 @@ class _PresentationScreenState extends State<PresentationScreen> {
                     setState(() => _currentIndex = index),
                 itemBuilder: (context, index) {
                   final slide = slides[index];
-                  return Semantics(
-                    label: 'slide-${slide.semanticId}',
-                    child: KeyedSubtree(
-                      key: ValueKey('slide-${slide.semanticId}'),
-                      child: LayoutBuilder(
-                        builder: (context, constraints) => SingleChildScrollView(
-                          child: ConstrainedBox(
-                            constraints: BoxConstraints(
-                              minHeight: constraints.maxHeight,
+                  return SlideIndexScope(
+                    index: index,
+                    child: Semantics(
+                      label: 'slide-${slide.semanticId}',
+                      child: KeyedSubtree(
+                        key: ValueKey('slide-${slide.semanticId}'),
+                        child: LayoutBuilder(
+                          builder: (context, constraints) => SingleChildScrollView(
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(
+                                minHeight: constraints.maxHeight,
+                              ),
+                              child: slide.builder(context),
                             ),
-                            child: slide.builder(context),
                           ),
                         ),
                       ),
