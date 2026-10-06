@@ -23,11 +23,13 @@ import 'slides/flutter_dart/own_rendering_slide.dart';
 import 'slides/flutter_dart/single_codebase_slide.dart';
 import 'slides/intro_slide.dart';
 import 'slides/marionette/agentic_tools_slide.dart';
+import 'slides/marionette/login_form_slide.dart';
 import 'slides/marionette/marionette_features_slide.dart';
 import 'slides/marionette/marionette_install_slide.dart';
 import 'slides/marionette/marionette_intro_slide.dart';
 import 'slides/marionette/mcp_slide.dart';
 import 'slides/marionette/suggest_change_slide.dart';
+import 'slides/marionette/tic_tac_toe_slide.dart';
 import 'slides/qa_slide.dart';
 
 /// Ordered deck for the talk. Add, remove, or reorder entries here —
@@ -67,6 +69,8 @@ final List<Slide> slides = [
   marionetteSlide,
   marionetteFeaturesSlide,
   marionetteInstallSlide,
+  ticTacToeSlide,
+  loginFormSlide,
   suggestChangeSlide,
   qaSlide,
 ];
