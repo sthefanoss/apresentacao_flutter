@@ -19,6 +19,9 @@ final dartLanguageSlide = Slide(
       items: [
         'Multiparadigma: orientada a objetos, com recursos funcionais — '
             'funções de primeira classe, closures, coleções imutáveis',
+        'Funções são cidadãs de primeira classe: podem ser passadas como '
+            'parâmetro, retornadas por outra função e atribuídas a '
+            'variáveis, como qualquer outro valor',
         'Fortemente tipada, com inferência — o tipo é checado em tempo de '
             'compilação, mesmo quando não escrito explicitamente',
         'Sem herança múltipla de classes — usa mixins para compor '
