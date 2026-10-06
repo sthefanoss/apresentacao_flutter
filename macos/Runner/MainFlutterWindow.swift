@@ -4,9 +4,14 @@ import FlutterMacOS
 class MainFlutterWindow: NSWindow {
   override func awakeFromNib() {
     let flutterViewController = FlutterViewController()
-    let windowFrame = self.frame
     self.contentViewController = flutterViewController
-    self.setFrame(windowFrame, display: true)
+
+    // A talk deck reads landscape; default to a 16:9 frame instead of the
+    // template's arbitrary size, and keep the window from being squeezed
+    // into portrait while still letting it resize.
+    let landscapeFrame = NSRect(origin: self.frame.origin, size: NSSize(width: 1280, height: 720))
+    self.setFrame(landscapeFrame, display: true)
+    self.contentMinSize = NSSize(width: 960, height: 540)
 
     RegisterGeneratedPlugins(registry: flutterViewController)
 

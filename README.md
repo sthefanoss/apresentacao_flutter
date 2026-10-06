@@ -17,6 +17,14 @@ Cada slide e cada controle de navegação tem uma `Key`/`Semantics` estável (`s
 `next-slide-button`, `current-slide-indicator`, ...), para que tanto testes quanto o marionette
 consigam localizá-los de forma confiável.
 
+## Direção visual
+
+Paleta e tipografia se inspiram em [Wonderous](https://github.com/gskinnerTeam/flutter-wonderous-app):
+fundo quase-preto e texto quase-branco (nunca preto/branco puros), e uma cor de destaque por
+slide (`PresentationColors` em `presentation_theme.dart`). As fontes — SpaceGrotesk (títulos e
+corpo) e SpaceMono (rótulos/legendas) — ficam em `assets/fonts/`, empacotadas localmente (sem
+`google_fonts`) para a apresentação não depender de wifi no dia.
+
 ## Rodando
 
 ```bash

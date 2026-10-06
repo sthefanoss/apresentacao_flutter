@@ -102,6 +102,7 @@ class _PresentationScreenState extends State<PresentationScreen> {
               currentIndex: _currentIndex,
               total: slides.length,
               title: slides[_currentIndex].title,
+              accentColor: slides[_currentIndex].accentColor,
               onPrevious: _goToPrevious,
               onNext: _goToNext,
             ),
@@ -117,6 +118,7 @@ class _NavigationBar extends StatelessWidget {
     required this.currentIndex,
     required this.total,
     required this.title,
+    required this.accentColor,
     required this.onPrevious,
     required this.onNext,
   });
@@ -124,6 +126,7 @@ class _NavigationBar extends StatelessWidget {
   final int currentIndex;
   final int total;
   final String title;
+  final Color accentColor;
   final VoidCallback onPrevious;
   final VoidCallback onNext;
 
@@ -141,6 +144,7 @@ class _NavigationBar extends StatelessWidget {
             tooltip: 'Slide anterior',
             onPressed: currentIndex == 0 ? null : onPrevious,
             icon: const Icon(Icons.arrow_back_ios_new),
+            color: accentColor,
           ),
           Expanded(
             child: Semantics(
@@ -158,6 +162,7 @@ class _NavigationBar extends StatelessWidget {
             tooltip: 'Próximo slide',
             onPressed: currentIndex == total - 1 ? null : onNext,
             icon: const Icon(Icons.arrow_forward_ios),
+            color: accentColor,
           ),
         ],
       ),

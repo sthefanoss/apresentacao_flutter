@@ -5,9 +5,10 @@ import '../presentation_theme.dart';
 /// Reused by every slide that needs a list of talking points, so bullet
 /// spacing and glyph stay identical instead of each slide hand-rolling it.
 class BulletList extends StatelessWidget {
-  const BulletList({super.key, required this.items});
+  const BulletList({super.key, required this.items, required this.accentColor});
 
   final List<String> items;
+  final Color accentColor;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class BulletList extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('›  ', style: PresentationText.body),
+                Text('›  ', style: PresentationText.body.copyWith(color: accentColor)),
                 Expanded(child: Text(item, style: PresentationText.body)),
               ],
             ),
