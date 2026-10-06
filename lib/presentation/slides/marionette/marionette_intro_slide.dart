@@ -1,7 +1,7 @@
-import '../presentation_theme.dart';
-import '../slide.dart';
-import '../widgets/bullet_list.dart';
-import '../widgets/slide_scaffold.dart';
+import '../../presentation_theme.dart';
+import '../../slide.dart';
+import '../../widgets/bullet_list.dart';
+import '../../widgets/slide_scaffold.dart';
 
 final marionetteSlide = Slide(
   semanticId: 'marionette',

@@ -22,7 +22,12 @@ import 'slides/flutter_dart/hot_reload_slide.dart';
 import 'slides/flutter_dart/own_rendering_slide.dart';
 import 'slides/flutter_dart/single_codebase_slide.dart';
 import 'slides/intro_slide.dart';
-import 'slides/marionette_slide.dart';
+import 'slides/marionette/agentic_tools_slide.dart';
+import 'slides/marionette/marionette_features_slide.dart';
+import 'slides/marionette/marionette_install_slide.dart';
+import 'slides/marionette/marionette_intro_slide.dart';
+import 'slides/marionette/mcp_slide.dart';
+import 'slides/marionette/suggest_change_slide.dart';
 import 'slides/qa_slide.dart';
 
 /// Ordered deck for the talk. Add, remove, or reorder entries here —
@@ -56,6 +61,12 @@ final List<Slide> slides = [
   // Dart, em mais detalhe.
   dartLanguageSlide,
   noReflectionSlide,
+  // Marionette — ferramentas agênticas, MCP, e o marionette em si.
+  agenticToolsSlide,
+  mcpSlide,
   marionetteSlide,
+  marionetteFeaturesSlide,
+  marionetteInstallSlide,
+  suggestChangeSlide,
   qaSlide,
 ];
