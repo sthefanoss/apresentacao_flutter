@@ -10,7 +10,7 @@ included: write `prompts/prompt-NNN.md` with the next unused zero-padded number,
     # Prompt NNN
 
     Data: <YYYY-MM-DD>
-    Ferramenta: Claude Code
+    Ferramenta: <the tool you are, e.g. Claude Code>
 
     ---
 
@@ -21,6 +21,10 @@ included: write `prompts/prompt-NNN.md` with the next unused zero-padded number,
     ## Resposta
 
     <your final reply text for this turn, verbatim>
+
+Skip the log for a message that only asks to interact with the app already running live (tap,
+type, scroll, read the screen, for example during the tic-tac-toe or login-form demo slides):
+nothing in the repository changes, so there is nothing to log.
 
 Write `## Pedido` before any other edit or command that turn. Last, write your final reply
 under `## Resposta`, commit, then send that same text unchanged; it cannot report the commit.
