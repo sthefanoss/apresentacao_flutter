@@ -2,10 +2,14 @@ import 'slide.dart';
 import 'slides/dart_lang/dart_language_slide.dart';
 import 'slides/dart_lang/no_reflection_slide.dart';
 import 'slides/flutter_advanced/build_context_slide.dart';
+import 'slides/flutter_advanced/cross_platform_widgets_slide.dart';
+import 'slides/flutter_advanced/cupertino_app_slide.dart';
+import 'slides/flutter_advanced/custom_paint_slide.dart';
 import 'slides/flutter_advanced/firebase_slide.dart';
 import 'slides/flutter_advanced/hot_reload_vs_restart_slide.dart';
 import 'slides/flutter_advanced/http_slide.dart';
 import 'slides/flutter_advanced/local_ai_slide.dart';
+import 'slides/flutter_advanced/material_app_slide.dart';
 import 'slides/flutter_advanced/native_bridge_slide.dart';
 import 'slides/flutter_advanced/persistence_slide.dart';
 import 'slides/flutter_advanced/pub_dev_slide.dart';
@@ -33,6 +37,10 @@ final List<Slide> slides = [
   // Flutter avançado.
   widgetsSlide,
   buildContextSlide,
+  materialAppSlide,
+  cupertinoAppSlide,
+  crossPlatformWidgetsSlide,
+  customPaintSlide,
   hotReloadVsRestartSlide,
   pubDevSlide,
   persistenceSlide,
