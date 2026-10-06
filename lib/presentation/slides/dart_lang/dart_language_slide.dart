@@ -1,7 +1,7 @@
 import '../../presentation_theme.dart';
 import '../../slide.dart';
 import '../../widgets/bullet_list.dart';
-import '../../widgets/flutter_dart_badges.dart';
+import '../../widgets/dart_icon_badge.dart';
 import '../../widgets/slide_scaffold.dart';
 
 final dartLanguageSlide = Slide(
@@ -13,7 +13,7 @@ final dartLanguageSlide = Slide(
     eyebrow: 'DART',
     title: 'Dart: multiparadigma e fortemente tipada',
     accentColor: PresentationColors.flutterDartAccent,
-    cornerVisual: const FlutterDartBadges(accentColor: PresentationColors.flutterDartAccent),
+    cornerVisual: const DartIconBadge(accentColor: PresentationColors.flutterDartAccent),
     body: const BulletList(
       accentColor: PresentationColors.flutterDartAccent,
       items: [

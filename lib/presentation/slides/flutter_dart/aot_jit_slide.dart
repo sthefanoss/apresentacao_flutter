@@ -1,20 +1,18 @@
 import '../../presentation_theme.dart';
 import '../../slide.dart';
 import '../../widgets/bullet_list.dart';
-import '../../widgets/flutter_dart_badges.dart';
 import '../../widgets/slide_scaffold.dart';
 
 final aotJitSlide = Slide(
   semanticId: 'flutter-dart-aot-jit',
-  eyebrow: 'FLUTTER & DART',
+  eyebrow: 'INTRODUÇÃO',
   title: 'Dart: AOT e JIT',
   accentColor: PresentationColors.flutterDartAccent,
   builder: (context) => SlideScaffold(
-    eyebrow: 'FLUTTER & DART',
+    eyebrow: 'INTRODUÇÃO',
     title: 'Dart: AOT e JIT',
     accentColor: PresentationColors.flutterDartAccent,
     subtitle: 'Dois modos de compilação, dois objetivos diferentes',
-    cornerVisual: const FlutterDartBadges(accentColor: PresentationColors.flutterDartAccent),
     body: const BulletList(
       accentColor: PresentationColors.flutterDartAccent,
       items: [

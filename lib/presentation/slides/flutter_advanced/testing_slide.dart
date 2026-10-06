@@ -1,19 +1,19 @@
 import '../../presentation_theme.dart';
 import '../../slide.dart';
 import '../../widgets/bullet_list.dart';
-import '../../widgets/flutter_dart_badges.dart';
+import '../../widgets/flutter_icon_badge.dart';
 import '../../widgets/slide_scaffold.dart';
 
 final testingSlide = Slide(
   semanticId: 'flutter-advanced-testing',
-  eyebrow: 'FLUTTER AVANÇADO',
+  eyebrow: 'FLUTTER',
   title: 'Testes unitários e de widget',
   accentColor: PresentationColors.flutterAdvancedAccent,
   builder: (context) => SlideScaffold(
-    eyebrow: 'FLUTTER AVANÇADO',
+    eyebrow: 'FLUTTER',
     title: 'Testes unitários e de widget',
     accentColor: PresentationColors.flutterAdvancedAccent,
-    cornerVisual: const FlutterDartBadges(accentColor: PresentationColors.flutterAdvancedAccent),
+    cornerVisual: const FlutterIconBadge(accentColor: PresentationColors.flutterAdvancedAccent),
     body: const BulletList(
       accentColor: PresentationColors.flutterAdvancedAccent,
       items: [

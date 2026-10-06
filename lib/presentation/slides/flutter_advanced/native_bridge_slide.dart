@@ -4,7 +4,7 @@ import '../../presentation_theme.dart';
 import '../../slide.dart';
 import '../../widgets/bullet_list.dart';
 import '../../widgets/code_block.dart';
-import '../../widgets/flutter_dart_badges.dart';
+import '../../widgets/flutter_icon_badge.dart';
 import '../../widgets/slide_scaffold.dart';
 
 const _platformChannelCode = '''
@@ -17,14 +17,14 @@ Future<int> getBatteryLevel() async {
 
 final nativeBridgeSlide = Slide(
   semanticId: 'flutter-advanced-native-bridge',
-  eyebrow: 'FLUTTER AVANÇADO',
+  eyebrow: 'FLUTTER',
   title: 'Quando (e como) chamar código nativo',
   accentColor: PresentationColors.flutterAdvancedAccent,
   builder: (context) => SlideScaffold(
-    eyebrow: 'FLUTTER AVANÇADO',
+    eyebrow: 'FLUTTER',
     title: 'Quando (e como) chamar código nativo',
     accentColor: PresentationColors.flutterAdvancedAccent,
-    cornerVisual: const FlutterDartBadges(accentColor: PresentationColors.flutterAdvancedAccent),
+    cornerVisual: const FlutterIconBadge(accentColor: PresentationColors.flutterAdvancedAccent),
     body: const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

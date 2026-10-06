@@ -4,7 +4,7 @@ import '../../presentation_theme.dart';
 import '../../slide.dart';
 import '../../widgets/bullet_list.dart';
 import '../../widgets/code_block.dart';
-import '../../widgets/flutter_dart_badges.dart';
+import '../../widgets/dart_icon_badge.dart';
 import '../../widgets/slide_scaffold.dart';
 
 const _manualSerializationCode = '''
@@ -32,7 +32,7 @@ final noReflectionSlide = Slide(
     title: 'Dart não tem reflexão (de verdade)',
     accentColor: PresentationColors.flutterDartAccent,
     subtitle: 'O que isso custa na prática',
-    cornerVisual: const FlutterDartBadges(accentColor: PresentationColors.flutterDartAccent),
+    cornerVisual: const DartIconBadge(accentColor: PresentationColors.flutterDartAccent),
     body: const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

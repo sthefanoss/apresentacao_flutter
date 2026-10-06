@@ -1,20 +1,18 @@
 import '../../presentation_theme.dart';
 import '../../slide.dart';
 import '../../widgets/bullet_list.dart';
-import '../../widgets/flutter_dart_badges.dart';
 import '../../widgets/slide_scaffold.dart';
 
 final hotReloadSlide = Slide(
   semanticId: 'flutter-dart-hot-reload',
-  eyebrow: 'FLUTTER & DART',
+  eyebrow: 'INTRODUÇÃO',
   title: 'Hot reload',
   accentColor: PresentationColors.flutterDartAccent,
   builder: (context) => SlideScaffold(
-    eyebrow: 'FLUTTER & DART',
+    eyebrow: 'INTRODUÇÃO',
     title: 'Hot reload',
     accentColor: PresentationColors.flutterDartAccent,
     subtitle: 'Troque o código, veja o resultado em segundos',
-    cornerVisual: const FlutterDartBadges(accentColor: PresentationColors.flutterDartAccent),
     body: const BulletList(
       accentColor: PresentationColors.flutterDartAccent,
       items: [

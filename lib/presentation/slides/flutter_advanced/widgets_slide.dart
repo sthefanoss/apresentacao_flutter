@@ -4,7 +4,7 @@ import '../../presentation_theme.dart';
 import '../../slide.dart';
 import '../../widgets/bullet_list.dart';
 import '../../widgets/code_block.dart';
-import '../../widgets/flutter_dart_badges.dart';
+import '../../widgets/flutter_icon_badge.dart';
 import '../../widgets/slide_scaffold.dart';
 
 const _counterCode = '''
@@ -31,15 +31,15 @@ class _CounterState extends State<Counter> {
 
 final widgetsSlide = Slide(
   semanticId: 'flutter-advanced-widgets',
-  eyebrow: 'FLUTTER AVANÇADO',
+  eyebrow: 'FLUTTER',
   title: 'StatelessWidget vs StatefulWidget',
   accentColor: PresentationColors.flutterAdvancedAccent,
   builder: (context) => SlideScaffold(
-    eyebrow: 'FLUTTER AVANÇADO',
+    eyebrow: 'FLUTTER',
     title: 'StatelessWidget vs StatefulWidget',
     accentColor: PresentationColors.flutterAdvancedAccent,
     subtitle: 'A pergunta certa: este widget guarda um estado que muda sozinho?',
-    cornerVisual: const FlutterDartBadges(accentColor: PresentationColors.flutterAdvancedAccent),
+    cornerVisual: const FlutterIconBadge(accentColor: PresentationColors.flutterAdvancedAccent),
     body: const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
