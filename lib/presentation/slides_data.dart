@@ -1,6 +1,7 @@
 import 'slide.dart';
 import 'slides/dart_lang/dart_language_slide.dart';
 import 'slides/dart_lang/no_reflection_slide.dart';
+import 'slides/flutter_advanced/build_context_slide.dart';
 import 'slides/flutter_advanced/firebase_slide.dart';
 import 'slides/flutter_advanced/hot_reload_vs_restart_slide.dart';
 import 'slides/flutter_advanced/http_slide.dart';
@@ -31,6 +32,7 @@ final List<Slide> slides = [
   hotReloadSlide,
   // Flutter avançado.
   widgetsSlide,
+  buildContextSlide,
   hotReloadVsRestartSlide,
   pubDevSlide,
   persistenceSlide,
