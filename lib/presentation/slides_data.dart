@@ -13,8 +13,9 @@ import 'slides/flutter_advanced/material_app_slide.dart';
 import 'slides/flutter_advanced/native_bridge_slide.dart';
 import 'slides/flutter_advanced/persistence_slide.dart';
 import 'slides/flutter_advanced/pub_dev_slide.dart';
+import 'slides/flutter_advanced/stateful_widget_slide.dart';
+import 'slides/flutter_advanced/stateless_widget_slide.dart';
 import 'slides/flutter_advanced/testing_slide.dart';
-import 'slides/flutter_advanced/widgets_slide.dart';
 import 'slides/flutter_dart/aot_jit_slide.dart';
 import 'slides/flutter_dart/hot_reload_slide.dart';
 import 'slides/flutter_dart/own_rendering_slide.dart';
@@ -35,7 +36,8 @@ final List<Slide> slides = [
   ownRenderingSlide,
   hotReloadSlide,
   // Flutter avançado.
-  widgetsSlide,
+  statelessWidgetSlide,
+  statefulWidgetSlide,
   buildContextSlide,
   materialAppSlide,
   cupertinoAppSlide,

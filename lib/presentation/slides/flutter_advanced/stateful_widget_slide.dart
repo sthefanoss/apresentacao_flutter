@@ -29,16 +29,16 @@ class _CounterState extends State<Counter> {
   }
 }''';
 
-final widgetsSlide = Slide(
-  semanticId: 'flutter-advanced-widgets',
+final statefulWidgetSlide = Slide(
+  semanticId: 'flutter-advanced-stateful-widget',
   eyebrow: 'FLUTTER',
-  title: 'StatelessWidget vs StatefulWidget',
+  title: 'StatefulWidget',
   accentColor: PresentationColors.flutterAdvancedAccent,
   builder: (context) => SlideScaffold(
     eyebrow: 'FLUTTER',
-    title: 'StatelessWidget vs StatefulWidget',
+    title: 'StatefulWidget',
     accentColor: PresentationColors.flutterAdvancedAccent,
-    subtitle: 'A pergunta certa: este widget guarda um estado que muda sozinho?',
+    subtitle: 'O que é "estado", e por que precisa do setState()',
     cornerVisual: const FlutterIconBadge(accentColor: PresentationColors.flutterAdvancedAccent),
     body: const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,14 +46,19 @@ final widgetsSlide = Slide(
         BulletList(
           accentColor: PresentationColors.flutterAdvancedAccent,
           items: [
-            'StatelessWidget: imutável, reconstruído só quando o pai muda '
-                '— ideal para UI puramente derivada dos parâmetros recebidos',
-            'StatefulWidget: separa a configuração imutável (Widget) do '
-                'State mutável, que sobrevive a rebuilds e chama setState() '
-                'para re-renderizar',
-            'Regra prática: comece Stateless; só suba para Stateful quando '
-                'precisar guardar estado local (animação, controller, '
-                'valor de formulário)',
+            'Estado é qualquer dado que pode mudar durante a vida do '
+                'widget e afeta o que é desenhado — um contador, o texto '
+                'de um campo, se um painel está aberto',
+            'StatefulWidget divide o trabalho em dois objetos: o Widget '
+                '(configuração imutável) e o State (onde o dado mutável '
+                'mora e sobrevive a rebuilds)',
+            'setState() não é "alterar a variável" — é o aviso pro '
+                'Flutter: "esse dado mudou, rode build() de novo e '
+                'redesenhe". Sem chamar, o Flutter não sabe que a tela '
+                'está desatualizada',
+            'Quando usar: o widget precisa lembrar algo entre rebuilds e '
+                'reagir sozinho a uma mudança — animação, controller, '
+                'valor de formulário, resposta de uma chamada assíncrona',
           ],
         ),
         SizedBox(height: PresentationSpacing.lg),
