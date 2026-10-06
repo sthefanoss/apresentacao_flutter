@@ -13,6 +13,7 @@ import 'slides/flutter_advanced/material_app_slide.dart';
 import 'slides/flutter_advanced/native_bridge_slide.dart';
 import 'slides/flutter_advanced/persistence_slide.dart';
 import 'slides/flutter_advanced/pub_dev_slide.dart';
+import 'slides/flutter_advanced/stateful_widget_lifecycle_slide.dart';
 import 'slides/flutter_advanced/stateful_widget_slide.dart';
 import 'slides/flutter_advanced/stateless_widget_slide.dart';
 import 'slides/flutter_advanced/testing_slide.dart';
@@ -38,6 +39,7 @@ final List<Slide> slides = [
   // Flutter avançado.
   statelessWidgetSlide,
   statefulWidgetSlide,
+  statefulWidgetLifecycleSlide,
   buildContextSlide,
   materialAppSlide,
   cupertinoAppSlide,
