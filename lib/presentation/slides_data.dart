@@ -7,6 +7,7 @@ import 'slides/flutter_advanced/http_slide.dart';
 import 'slides/flutter_advanced/local_ai_slide.dart';
 import 'slides/flutter_advanced/native_bridge_slide.dart';
 import 'slides/flutter_advanced/persistence_slide.dart';
+import 'slides/flutter_advanced/pub_dev_slide.dart';
 import 'slides/flutter_advanced/testing_slide.dart';
 import 'slides/flutter_advanced/widgets_slide.dart';
 import 'slides/flutter_dart/aot_jit_slide.dart';
@@ -31,6 +32,7 @@ final List<Slide> slides = [
   // Flutter avançado.
   widgetsSlide,
   hotReloadVsRestartSlide,
+  pubDevSlide,
   persistenceSlide,
   httpSlide,
   firebaseSlide,
