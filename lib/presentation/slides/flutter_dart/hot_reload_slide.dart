@@ -20,8 +20,8 @@ final hotReloadSlide = Slide(
             'árvore de widgets, sem perder o estado atual do app',
         'Só funciona em debug: depende da compilação JIT, que o build de '
             'release (AOT) não tem',
-        'Não serve para tudo: mudanças em main(), em variáveis globais/'
-            'estáticas ou em código nativo pedem um hot restart',
+        'Não serve para tudo: mudanças em main() ou em variáveis globais/'
+            'estáticas pedem um hot restart',
         'Esta apresentação, inclusive, está rodando com hot reload agora — '
             'qualquer mudança no código deste slide aparece na hora, sem '
             'reiniciar o app',

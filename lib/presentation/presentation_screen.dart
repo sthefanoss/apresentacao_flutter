@@ -72,34 +72,36 @@ class _PresentationScreenState extends State<PresentationScreen> {
         body: Column(
           children: [
             Expanded(
-              child: PageView.builder(
-                key: const ValueKey('slide-page-view'),
-                controller: _controller,
-                itemCount: slides.length,
-                onPageChanged: (index) =>
-                    setState(() => _currentIndex = index),
-                itemBuilder: (context, index) {
-                  final slide = slides[index];
-                  return SlideIndexScope(
-                    index: index,
-                    child: Semantics(
-                      label: 'slide-${slide.semanticId}',
-                      child: KeyedSubtree(
-                        key: ValueKey('slide-${slide.semanticId}'),
-                        child: LayoutBuilder(
-                          builder: (context, constraints) => SingleChildScrollView(
-                            child: ConstrainedBox(
-                              constraints: BoxConstraints(
-                                minHeight: constraints.maxHeight,
+              child: SelectionArea(
+                child: PageView.builder(
+                  key: const ValueKey('slide-page-view'),
+                  controller: _controller,
+                  itemCount: slides.length,
+                  onPageChanged: (index) =>
+                      setState(() => _currentIndex = index),
+                  itemBuilder: (context, index) {
+                    final slide = slides[index];
+                    return SlideIndexScope(
+                      index: index,
+                      child: Semantics(
+                        label: 'slide-${slide.semanticId}',
+                        child: KeyedSubtree(
+                          key: ValueKey('slide-${slide.semanticId}'),
+                          child: LayoutBuilder(
+                            builder: (context, constraints) => SingleChildScrollView(
+                              child: ConstrainedBox(
+                                constraints: BoxConstraints(
+                                  minHeight: constraints.maxHeight,
+                                ),
+                                child: slide.builder(context),
                               ),
-                              child: slide.builder(context),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                  );
-                },
+                    );
+                  },
+                ),
               ),
             ),
             _NavigationBar(
